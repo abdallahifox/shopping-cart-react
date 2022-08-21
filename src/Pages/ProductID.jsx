@@ -18,6 +18,7 @@ function ProductID() {
 
   useEffect(() => {
     getProduct(id).then((product) => setProduct(product));
+    document.title = `Product Details - Shopping-Cart`;
   }, []);
   return (
     <div className="bg-slate-800 grid md:grid-cols-2 gap-4 p-4 fade-in">

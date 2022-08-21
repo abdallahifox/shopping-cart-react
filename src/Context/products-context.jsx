@@ -84,7 +84,6 @@ export const ProductsContextProvider = (props) => {
   useEffect(() => {
     setLoading(true);
     let data = getProducts("https://fakestoreapi.com/products").then((res) => {
-      console.log("Loading");
       setProducts([...res]);
       setLoading(false);
     });

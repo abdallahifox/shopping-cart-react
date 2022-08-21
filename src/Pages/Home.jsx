@@ -1,10 +1,13 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import ProductsContext from "../Context/products-context";
 
 import Products from "./../Components/Landing/Products";
 function Home() {
   const { loading } = useContext(ProductsContext);
-
+  let title = "";
+  useEffect(() => {
+    document.title = "Home - Shopping-Cart";
+  }, []);
   return (
     <>
       {!loading && (

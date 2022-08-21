@@ -7,7 +7,8 @@ function CartItem() {
   // to watch the total of the items
   useEffect(() => {
     getTotal();
-  }, [items]);
+    document.title = "Cart - Shopping-Cart";
+  }, []);
   return (
     <>
       <h2 className="text-center mb-10 font-bold text-2xl">Your Cart</h2>
