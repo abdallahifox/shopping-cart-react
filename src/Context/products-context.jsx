@@ -49,6 +49,7 @@ export const ProductsContextProvider = (props) => {
       prev[indexID].qty++;
       return [...prev];
     });
+    setTotal((prev) => getTotal());
   };
 
   // decress Item Qty From The Cart
@@ -68,6 +69,7 @@ export const ProductsContextProvider = (props) => {
         return [...prev];
       }
     });
+    setTotal((prev) => getTotal());
   };
 
   // get all the total of price
