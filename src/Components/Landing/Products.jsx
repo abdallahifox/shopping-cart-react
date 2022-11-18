@@ -8,7 +8,6 @@ function Products() {
   const newProducts = useMemo(() => {
     return products;
   }, [products]);
-
   return (
     <div className="container mx-auto ">
       <div className="p-3 rounded grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

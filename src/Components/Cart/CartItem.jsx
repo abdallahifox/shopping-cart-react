@@ -18,7 +18,11 @@ function CartItem() {
               <div className="px-4 mb-8" key={item.id}>
                 <div className="grid md:grid-cols-2">
                   <div className="flex flex-col items-center">
-                    <img src={item.image} alt="w-16 h-16" className="h-48" />
+                    <img
+                      src={item.images[0]}
+                      alt="w-16 h-16"
+                      className="h-48"
+                    />
                   </div>
                   <div className="flex flex-col text-center md:text-left mt-3 md:mt-0">
                     <h1 className="text-xl font-bold mb-3">{item.title}</h1>

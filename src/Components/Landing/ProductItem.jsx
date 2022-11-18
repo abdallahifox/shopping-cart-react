@@ -8,14 +8,17 @@ function ProductItem({ product }) {
   const addToCart = () => {
     addToItems({ ...product, qty: 1 });
   };
-
   return (
     <>
       {product && (
         <div className="text-slate-800 flex flex-col w-full h-full justify-center">
           <div className="flex items-center w-full justify-center">
-            {product.image ? (
-              <img src={product.image} alt="Product" className="mb-3 h-32" />
+            {product.images ? (
+              <img
+                src={product.images[0]}
+                alt="Product"
+                className="mb-3 h-32"
+              />
             ) : (
               "no image found"
             )}
