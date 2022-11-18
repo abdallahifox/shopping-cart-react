@@ -27,7 +27,7 @@ function ProductID() {
           <div className="flex flex-col items-center  justify-center">
             <h1 className="text-md md:text-xl font-bold">{product.title}</h1>
             <div className="w-32 my-4">
-              <img src={product.image} alt={product.title} />
+              <img src={product.images[0]} alt={product.title} />
             </div>
           </div>
         </div>
